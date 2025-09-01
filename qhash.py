@@ -262,7 +262,7 @@ class ExclusionaryPoWMiner:
         self.mining_rounds = 0
         self.excluded_attempts = 0
         
-    def quantum_exclusionary_mining(self, data_input: str, max_attempts: int = 20000000) -> Tuple[int, str, bool]:
+    def quantum_exclusionary_mining(self, data_input: str, max_attempts: int = 2000000) -> Tuple[int, str, bool]:
         """Mine PoW while excluding quantum-identified high-probability states"""
         
         print(f"   🌌 QUANTUM EXCLUSIONARY MINING (Round {self.mining_rounds + 1})")
